@@ -1,0 +1,124 @@
+.carouselContainer {
+  /* border: solid green; */
+  height: 100%;
+}
+.carouselItem {
+  /* border: solid red; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.carouselItem > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.carouselItemCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000096;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.headerCarouselContent {
+  /* border: solid brown; */
+  width: 700px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: -200px;
+  padding: 10px;
+}
+.headerCarouselContent1 {
+  /* border: solid red; */
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--customBlue);
+  color: white;
+  font-weight: bold;
+}
+
+.headerCarouselContent2 > h2 {
+  font-size: 90px;
+  color: white;
+}
+.headerCarouselContent2 > span {
+  font-size: 100px;
+  color: white;
+}
+.headerCarouselContent3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+  width: 100%;
+}
+.headerCarouselContent3 > p {
+  font-size: 20px;
+  color: white;
+  width: 90%;
+  text-align: justify;
+}
+.carouselArrow {
+  /* border: solid red; */
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.289);
+  cursor: pointer;
+}
+.carouselArrowIcon {
+  font-size: 20px;
+  color: var(--customBlue);
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .headerCarouselContent {
+    /* border: solid brown; */
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .headerCarouselContent2 > h2 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+  }
+  .headerCarouselContent3 > p {
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    text-align: justify;
+  }
+  .headerCarouselContent3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+}

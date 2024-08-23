@@ -1,0 +1,86 @@
+.radiationDeptContent {
+  /* border: solid green; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--customLightBlue);
+}
+.radiationDeptItem1 {
+  /* border: solid red; */
+  width: 75%;
+  padding: 20px;
+  height: 100%;
+  position: relative;
+}
+
+.radiationDeptItem2 {
+  /* border: solid blue; */
+  width: 25%;
+  height: 2450px;
+  padding: 20px;
+}
+.sideNav {
+  /* border: solid brown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  position: sticky;
+  top: 150px;
+}
+.sideNav > a {
+  color: var(--customDarkBlue);
+  font-weight: bold;
+  text-decoration: none;
+  width: 90%;
+}
+.sideNav > a > li {
+  border: 1px solid;
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sideNav > a > li {
+  color: var(--customDarkBlue);
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.active > .navLi1 {
+  background-color: var(--customBlue);
+  color: white;
+}
+.sideNavArrow {
+  color: black;
+}
+.active > .navLi1 > .sideNavArrow {
+  color: white;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .radiationDeptContent {
+    /* border: solid green; */
+    flex-direction: column;
+  }
+  .radiationDeptItem1 {
+    /* border: solid red; */
+    width: 100%;
+    padding: 10px;
+  }
+  .radiationDeptItem2 {
+    /* border: solid blue; */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+}

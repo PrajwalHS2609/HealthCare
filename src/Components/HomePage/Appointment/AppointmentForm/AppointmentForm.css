@@ -1,0 +1,192 @@
+.AppointmentForm {
+  /* border: solid red; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+.appointmentFormHead {
+  width: 100%;
+}
+.appointmentFormHead > h6 {
+  width: 100%;
+  text-align: start;
+}
+.appointmentFormHead > h2 {
+  text-align: start;
+  font-size: 50px;
+}
+.appointmentFormMain {
+  /* border: solid green; */
+  width: 100%;
+  padding: 10px;
+}
+.appointmentFormMain > form {
+  width: 100%;
+}
+.appointmentFormMain > form > fieldset {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+.firstLane {
+  /* border: solid black; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.firstLane > input {
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: var(--customLightBlue);
+  width: 40%;
+  outline: none;
+}
+.firstLane > input::placeholder {
+  color: black;
+  font-weight: 600;
+}
+.secondLane {
+  /* border: solid black; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.secondLane > select {
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: var(--customLightBlue);
+  width: 40%;
+  outline: none;
+}
+.secondLane > input::placeholder {
+  color: black;
+  font-weight: 600;
+}
+.thirdLane {
+  /* border: solid black; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.thirdLane > input {
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: var(--customLightBlue);
+  width: 25%;
+  outline: none;
+}
+.thirdLane > input::placeholder {
+  color: black;
+  font-weight: 600;
+}
+.fourthLane {
+  /* border: solid black; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.fourthLane > textarea {
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: var(--customLightBlue);
+  outline: none;
+}
+.fourthLane > textarea::placeholder {
+  color: black;
+  font-weight: 600;
+}
+.appointmentFormLogo {
+  border: 7px solid var(--customBlue);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--customDarkBlue);
+}
+.appointmentFormMainIcon {
+  color: white;
+  font-size: 25px;
+}
+.appointmentFormButtonContainer {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.appointmentFormButtonContainer > a > button {
+  color: white;
+  background-color: var(--customBlue);
+  border: solid white;
+  outline: none;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 300ms ease;
+}
+.appointmentFormButtonContainer > a > button:hover {
+  color: var(--customBlue);
+  border: solid var(--customBlue);
+  background-color: white;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .AppointmentForm {
+    width: 100%;
+  }
+  .appointmentFormHead > h2 {
+    font-size: 30px;
+  }
+  .firstLane {
+    /* border: solid black; */
+    flex-direction: column;
+    gap: 10px;
+  }
+  .firstLane > input {
+    width: 100%;
+  }
+  .secondLane {
+    /* border: solid black; */
+    flex-direction: column;
+    gap: 10px;
+  }
+  .secondLane > select {
+    width: 100%;
+  }
+  .thirdLane {
+    /* border: solid black; */
+    flex-direction: column;
+    gap: 10px;
+  }
+  .thirdLane > input {
+    width: 100%;
+  }
+}

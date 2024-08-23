@@ -1,0 +1,64 @@
+.radiationDeptFaq {
+  /* border: solid green; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.radiationDeptFaq > h2 {
+  font-size: 40px;
+  color: var(--customDarkBlue);
+  text-align: start;
+  width: 100%;
+}
+.radiationDeptFaq > p {
+  font-size: 17px;
+}
+.radiationDeptFaqAcc {
+  width: 100%;
+}
+.accordionContainer {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  border-radius: 20px;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  outline: none;
+}
+.accordion-button {
+  color: var(--customDarkBlue);
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.accordion-button:not(.collapsed) {
+  color: #007bff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.accordionPara > p {
+  font-size: 17px;
+  font-weight: 400;
+}
+.accordionHeader {
+  border-radius: 20px;
+  padding: 20px;
+}
+.accordionItem {
+  margin: 10px;
+  width: 100%;
+  border-radius: 20px;
+}

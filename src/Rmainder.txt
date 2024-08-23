@@ -1,0 +1,2 @@
+footer responsive
+nav bar resp content and proper responsive

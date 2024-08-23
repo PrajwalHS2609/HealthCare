@@ -1,0 +1,107 @@
+.AppointmentTreatment {
+  /* border: solid red; */
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.AppointmentTreatment > h2 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.AppointmentTreatment > p {
+  color: white;
+  text-align: center;
+}
+.AppointmentTreatmentCard {
+  /* border: solid green; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.AppointmentTreatmentCardContent1 {
+  /* border: solid brown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  height: 100%;
+}
+.AppointmentTreatmentCardContent2 {
+  /* border: solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  padding: 10px;
+}
+.AppointmentTreatmentCardItem1 {
+  /* border: solid red; */
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: var(--customDarkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AppointmentTreatmentCardIcon {
+  color: white;
+  font-size: 40px;
+}
+.AppointmentTreatmentCardContent2 > h3 {
+  color: white;
+  width: 100%;
+  text-align: start;
+}
+.AppointmentTreatmentCardContent2 > p {
+  color: white;
+  text-align: justify;
+}
+.AppointmentTreatmentCard:hover .AppointmentTreatmentCardItem1 {
+  animation: rightLeft 300ms linear infinite;
+}
+@keyframes rightLeft {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .AppointmentTreatment {
+    /* border: solid red; */
+    width: 100%;
+    padding: 10px;
+  }
+  .AppointmentTreatmentCard {
+    /* border: solid green; */
+    flex-direction: column;
+  }
+  .AppointmentTreatmentCardContent2 {
+    /* border: solid yellow; */
+    width: 100%;
+  }
+  .AppointmentTreatmentCardContent2 > h3 {
+    text-align: center;
+  }
+}

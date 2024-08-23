@@ -1,0 +1,365 @@
+.navbarContainer {
+  /* border: solid red; */
+  width: 100%;
+  height: 80px;
+  background-color: var(--customLightBlue);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  z-index: 5;
+  position: sticky;
+  top: 0;
+}
+.navbarContainer1 {
+  /* border: solid red; */
+  width: 100%;
+  height: 80px;
+  background-color: var(--customLightBlue);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  z-index: 5;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 10px 20px black;
+}
+.logoContainer {
+  /* border: solid green; */
+  width: 15%;
+  height: 90%;
+  border-bottom-right-radius: 20px;
+  padding: 10px;
+}
+.logoContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.menuContainer {
+  /* border: solid blue; */
+  width: 80%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuContent1 {
+  /* border: solid brown; */
+  width: 75%;
+  height: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menuContent1 > li {
+  /* border: solid; */
+  list-style: none;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  height: 100%;
+}
+.menuContent1 > li > a {
+  color: black;
+  text-decoration: none;
+}
+.menuContent1 > li:hover .menuNavLink {
+  color: var(--customBlue);
+}
+.menuContent1 > li:hover .dropdownIcon {
+  color: var(--customBlue);
+}
+.dropdownIcon {
+  font-size: 15px;
+}
+
+.menuContentList1 > .active {
+  color: var(--customBlue);
+}
+.menuContentList2 > .active {
+  color: var(--customBlue);
+}
+.menuContentList3 > .active {
+  color: var(--customBlue);
+}
+.menuContentList4 > .active {
+  color: var(--customBlue);
+}
+.dropDown {
+  /* border: solid red; */
+  width: 250px;
+  position: absolute;
+  bottom: -280px;
+  padding: 20px;
+  border-radius: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 10px grey;
+  background-color: white;
+}
+.dropDown > li {
+  width: 100%;
+  border-bottom: 2px solid grey;
+  transition: 300ms ease-in-out;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+.menuContent1 > li:hover .dropDown {
+  display: flex;
+}
+.dropDown > li > a {
+  text-decoration: none;
+  color: black;
+  transition: 300ms ease-in-out;
+  transform: translateX(-10px);
+}
+.navLink:hover {
+  color: var(--customBlue);
+}
+.dropDown > li:hover .navLink {
+  transform: translateX(10px);
+}
+.medikitIcon {
+  transform: translateX(-20px);
+  transition: 300ms ease-in-out;
+  color: var(--customBlue);
+}
+.dropDown > li:hover .medikitIcon {
+  transform: translateX(5px);
+}
+
+.emergencyBlock {
+  /* border: solid rebeccapurple; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.emergencyBlock > a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.emergencyIcon {
+  color: var(--customBlue);
+  font-size: 25px;
+}
+/* .dropContentList1 > .active {
+  color: var(--customBlue);
+}
+.dropContentList2 > .active {
+  color: var(--customBlue);
+}
+
+.dropContentList3 > .active {
+  color: var(--customBlue);
+}
+
+.dropContentList4 > .active {
+  color: var(--customBlue);
+}
+
+.dropContentList5 > .active {
+  color: var(--customBlue);
+}
+
+.dropContentList6 > .active {
+  color: var(--customBlue);
+} */
+.menuContent2 {
+  /* border: solid brown; */
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuContent2 > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 10px;
+  text-decoration: none;
+}
+.menuContent2 > a > button {
+  border: solid var(--customBlue);
+  background-color: var(--customBlue);
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+.buttonArrow {
+  color: white;
+  transform: rotate(-50deg);
+  font-size: 16px;
+}
+.menuContent3 {
+  /* border: solid red; */
+  width: 60%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-left: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.menuContent3 > img {
+  width: 50px;
+  height: 50px;
+}
+.respMenu {
+  /* border: solid blue; */
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: 1s ease;
+  background-color: #1346fec1;
+  display: none;
+  overflow: hidden;
+}
+
+.innerRespMenu {
+  /* border: solid green; */
+  position: absolute;
+  right: 0;
+  width: 99%;
+  height: 100%;
+  top: 0;
+  transform: translateX(100%);
+  transition: 1s ease;
+  transition-delay: 1s;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.menuContent3 > img:hover .respMenu {
+  transform: translateX(0);
+}
+.closeX {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+}
+.innerMenu {
+  /* border: solid red; */
+  height: 80%;
+  width: 90%;
+}
+.innerMenu > li {
+  /* border: solid; */
+  border-bottom: 1px solid grey;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.innerMenu > li > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--customDarkBlue);
+  font-weight: 500;
+}
+li > a > button {
+  border: solid white;
+  border-radius: 20px;
+  background-color: var(--customBlue);
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+}
+li > a > button:hover {
+  background-color: white;
+  border: solid var(--customBlue);
+  color: var(--customBlue);
+}
+.innerMenuDrop {
+  border: 1px solid grey;
+  width: 100%;
+  border-radius: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.innerMenu > .menuContentList2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menuContentList2:hover .innerMenuDrop {
+  display: flex;
+}
+.innerMenuDrop > li {
+  width: 100%;
+  margin: 5px;
+  transition: 300ms ease-in-out;
+}
+.innerMenuDrop > li > a {
+  color: var(--customDarkBlue);
+  text-decoration: none;
+  font-size: 18px;
+}
+.innerMenuDrop > li:hover {
+  transform: translateX(30px);
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .menuContent1 {
+    display: none;
+  }
+  .menuContent2 {
+    display: none;
+  }
+  .logoContainer {
+    /* border: solid green; */
+    width: 80%;
+    height: 90%;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+  }
+  .menuContent3 {
+    /* border: solid red; */
+    display: flex;
+  }
+  .respMenu {
+    /* border: solid blue; */
+    display: flex;
+  }
+}

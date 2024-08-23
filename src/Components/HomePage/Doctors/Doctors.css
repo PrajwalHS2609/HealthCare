@@ -1,0 +1,159 @@
+.doctorsContainer {
+  /* border: solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--customLightBlue);
+}
+.doctorsHead {
+  /* border: solid blue; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.doctorsHead > h6 {
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  color: var(--customDarkBlue);
+}
+.doctorsHead > h2 {
+  font-size: 50px;
+  color: var(--customDarkBlue);
+  text-align: center;
+}
+.doctorsMain {
+  /* border: solid green; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.doctorsCard {
+  /* border: solid red; */
+  width: 23%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #86a4b0;
+  position: relative;
+  overflow: hidden;
+}
+.doctorsCard > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.doctorsCardCover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(
+    to top,
+    white,
+    rgba(255, 255, 255, 0.297),
+    transparent
+  );
+  transition: 1s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 1;
+}
+.doctorsCard:hover .doctorsCardCover {
+  background: linear-gradient(
+    to top,
+    blue,
+    rgba(0, 0, 255, 0.297),
+    transparent
+  );
+}
+.doctorsCardCover > h3 {
+  /* border: solid; */
+  width: 100%;
+  text-align: center;
+  color: var(--customDarkBlue);
+}
+.doctorsCard:hover .doctorName > h3 {
+  color: white;
+}
+.doctorName {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.doctorName > h6 {
+  padding: 10px;
+  background-color: var(--customLightBlue);
+  text-align: center;
+  width: fit-content;
+  border-radius: 20px;
+  font-size: 15px;
+}
+.doctorsCardIcon {
+  border: 10px solid var(--customLightBlue);
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -10px;
+  right: -10px;
+  background-color: white;
+  z-index: 2;
+}
+.doctorsCardSocial {
+  /* border: solid; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 1s ease;
+}
+.doctorsCardSocial > li {
+  /* border: solid red; */
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.doctorsSocial {
+  font-size: 20px;
+}
+.doctorsCard:hover .doctorsCardSocial {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .doctorsMain {
+    /* border: solid green; */
+    flex-direction: column;
+    gap: 20px;
+  }
+  .doctorsCard {
+    /* border: solid red; */
+    min-width: 300px;
+  }
+}

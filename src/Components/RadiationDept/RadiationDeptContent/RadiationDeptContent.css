@@ -1,0 +1,25 @@
+.radiationDeptContentWrapper {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.radiationDeptContentImg > img {
+  width: 100%;
+  border-radius: 20px;
+}
+.radiationDeptContentPara {
+  padding: 10px;
+}
+.radiationDeptContentPara > p {
+  text-align: justify;
+  font-size: 17px;
+}
+.radiationDeptContentPara > p > span {
+  font-size: 40px;
+  color: var(--customBlue);
+  font-weight: bolder;
+}

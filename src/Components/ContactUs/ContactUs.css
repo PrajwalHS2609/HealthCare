@@ -1,0 +1,64 @@
+.contactUsHeader {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+}
+.contactUsImgContainer {
+  /* border: solid green; */
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.contactUsImgContainer > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.contactUsHeaderCover {
+  /* border: solid blue; */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.411);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contactUsHeading {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.contactUsHeading > h2 {
+  font-size: 60px;
+  color: white;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .contactUsHeading > h2 {
+    font-size: 40px;
+    color: white;
+  }
+  .contactUsHeader {
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+}

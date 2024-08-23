@@ -1,0 +1,41 @@
+.radiationDeptHow > h2 {
+  font-size: 40px;
+  color: var(--customDarkBlue);
+  text-align: start;
+  width: 100%;
+}
+.radiationDeptHow > p {
+  font-size: 17px;
+  text-align: justify;
+}
+.radiationDeptHow > li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  margin: 10px;
+  text-align: justify;
+  width: 100%;
+  padding: 10px;
+}
+.radiationDeptHow > li > img {
+  width: 20px;
+  height: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .radiationDeptHow > h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .radiationDeptHow > li {
+    width: 100%;
+    padding: 20px;
+
+  }
+  .radiationDeptHow > li > img {
+    width: 20px;
+    height: 20px;
+  }
+}

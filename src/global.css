@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --customBlue: #1344fe;
+  --customLightBlue: #e7e7fe;
+  --customDarkBlue: #031a4c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  font-family: "Montserrat", sans-serif;
+}

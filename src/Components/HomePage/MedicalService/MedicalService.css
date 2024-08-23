@@ -1,0 +1,170 @@
+.medicalService {
+  width: 100%;
+  background-color: var(--customLightBlue);
+  padding: 20px;
+}
+.medicalServiceHead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.medicalServiceHead > h2 {
+  font-size: 50px;
+  color: var(--customDarkBlue);
+  text-align: center;
+}
+.medicalServiceHead > h5 {
+  font-size: 15px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+.medicalServiceMain {
+  /* border: solid red; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.MedicalServiceCarouselContainer {
+  /* border: solid green; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.MedicalServiceCarouselItem {
+  /* border: solid red; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.medicalServiceMainContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+.medicalServiceCard {
+  /* border: solid blue; */
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 10px; */
+  background-color: white;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+.medicalServiceCardImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.medicalServiceCardImg > img {
+  width: 115%;
+  height: 100%;
+  border-radius: 20px;
+  transition: 1s ease;
+}
+.medicalServiceCard:hover .medicalServiceCardImg > img {
+  transform: translateX(20px);
+}
+.medicalServiceCardContent {
+  /* border: solid green; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.medicalServiceCardContent > h4 {
+  font-size: 15px;
+  background-color: var(--customLightBlue);
+  padding: 10px;
+  letter-spacing: 1px;
+  border-radius: 20px;
+}
+.medicalServiceCardLogo {
+  border: 7px solid var(--customLightBlue);
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms ease;
+}
+.medicalServiceIcon {
+  font-size: 30px;
+  transition: 300ms ease;
+  color: var(--customDarkBlue);
+}
+.medicalServiceCard:hover .medicalServiceCardLogo {
+  background-color: var(--customBlue);
+}
+.medicalServiceCard:hover .medicalServiceIcon {
+  color: white;
+}
+.medicalServiceCardArrow {
+  border: 7px solid var(--customLightBlue);
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms ease;
+}
+.medicalServiceArrowIcon {
+  font-size: 30px;
+  transition: 300ms ease;
+  transform: rotate(-40deg);
+  color: var(--customDarkBlue);
+}
+/* .medicalServiceCard:hover .medicalServiceArrowIcon {
+  transform: translate(5px, -5px) rotate(-40deg);
+} */
+.medicalServiceCard > a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .medicalServiceMainContent {
+    /* border: solid; */
+    flex-direction: column;
+  }
+  .medicalServiceCard {
+    /* border: solid blue; */
+    width: 100%;
+  }
+
+}
