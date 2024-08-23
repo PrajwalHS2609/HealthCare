@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        {/* <UpperNav /> */}
+        <UpperNav />
         <NavBar />
         <ScrollTo />
         <Routes>
