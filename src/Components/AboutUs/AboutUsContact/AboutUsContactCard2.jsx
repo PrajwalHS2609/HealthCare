@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 const AboutUsContactCard2 = () => {
   return (
-    <div className="aboutUsContactCard">
+    <div className="aboutUsContactCard" id="aboutUsContactCard2">
       <div className="aboutUsContactCardIcon">
         <FontAwesomeIcon
           icon={faPhone}

@@ -94,6 +94,9 @@
 .menuContentList4 > .active {
   color: var(--customBlue);
 }
+#homeDropDown{
+  top: 50px;height: fit-content;
+}
 .dropDown {
   /* border: solid red; */
   width: 250px;
@@ -317,6 +320,12 @@ li > a > button:hover {
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+}
+.innerMenu > .menuContentList1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .innerMenu > .menuContentList2 {
   display: flex;

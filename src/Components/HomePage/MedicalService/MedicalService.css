@@ -116,7 +116,7 @@
   align-items: center;
   transition: 300ms ease;
 }
-.medicalServiceIcon {
+.medicalServIcon {
   font-size: 30px;
   transition: 300ms ease;
   color: var(--customDarkBlue);
@@ -124,7 +124,7 @@
 .medicalServiceCard:hover .medicalServiceCardLogo {
   background-color: var(--customBlue);
 }
-.medicalServiceCard:hover .medicalServiceIcon {
+.medicalServiceCard:hover .medicalServIcon {
   color: white;
 }
 .medicalServiceCardArrow {

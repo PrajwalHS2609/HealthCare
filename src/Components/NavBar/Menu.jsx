@@ -13,6 +13,7 @@ import {
 import menuBar from "./../../Imgs/menu.png";
 const Menu = () => {
   let [drop, setDrop] = useState(false);
+  let dropRefHome = useRef();
   let dropRef = useRef();
   let showSideBar = () => {
     const sideBar = document.querySelector(".respMenu");
@@ -35,10 +36,12 @@ const Menu = () => {
     if (!drop) {
       setDrop(true);
       dropRef.current.style.display = "flex";
+      dropRefHome.current.style.display = "flex";
       console.log("down");
     } else {
       setDrop(false);
       dropRef.current.style.display = "none";
+      dropRefHome.current.style.display = "none";
       console.log("up");
     }
   };
@@ -49,7 +52,23 @@ const Menu = () => {
           <NavLink className="menuNavLink" to={"/"}>
             Home
           </NavLink>{" "}
+          <FontAwesomeIcon
+            icon={faChevronDown}
+            className="dropdownIcon"
+          ></FontAwesomeIcon>
+          <div className="dropDown" ref={dropRef} id="homeDropDown">
+            <li className="dropContentList1">
+              <FontAwesomeIcon
+                icon={faMedkit}
+                className="medikitIcon"
+              ></FontAwesomeIcon>{" "}
+              <NavLink className="navLink" id="navLink1" to={"/home2"}>
+                Home2
+              </NavLink>
+            </li>
+          </div>
         </li>
+
         {/* <li className="menuContentList2">
           <NavLink className="menuNavLink" to={"/services"}>
             Services
@@ -73,7 +92,11 @@ const Menu = () => {
                 icon={faMedkit}
                 className="medikitIcon"
               ></FontAwesomeIcon>{" "}
-              <NavLink className="navLink" id="navLink1" to={"/radiation-therapy"}>
+              <NavLink
+                className="navLink"
+                id="navLink1"
+                to={"/radiation-therapy"}
+              >
                 Radiation Therapy
               </NavLink>
             </li>
@@ -174,10 +197,30 @@ const Menu = () => {
             onClick={hideSideBar}
           ></FontAwesomeIcon>
           <div className="innerMenu">
-            <li className="menuContentList1">
+            <li className="menuContentList1" onClick={handleDropDown}>
               <NavLink className="menuNavLink" to={"/"} onClick={hideSideBar}>
                 Home
+                <FontAwesomeIcon
+                  icon={faChevronDown}
+                  className="menuNavDropIcon"
+                ></FontAwesomeIcon>
               </NavLink>{" "}
+              <div className="innerMenuDrop" ref={dropRefHome}>
+                <li className="dropContentList1">
+                  <FontAwesomeIcon
+                    icon={faMedkit}
+                    className="medikitIcon"
+                  ></FontAwesomeIcon>{" "}
+                  <NavLink
+                    className="navLink"
+                    id="navLink1"
+                    to={"/home2"}
+                    onClick={hideSideBar}
+                  >
+                    Home2{" "}
+                  </NavLink>
+                </li>{" "}
+              </div>
             </li>
             <li className="menuContentList2" onClick={handleDropDown}>
               <NavLink className="menuNavLink" to={""}>

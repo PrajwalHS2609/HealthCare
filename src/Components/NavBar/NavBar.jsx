@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./NavBar.css";
 import Logo from "./Logo";
 import Menu from "./Menu";
+
 const NavBar = () => {
   let [scroll, setScroll] = useState(false);
 

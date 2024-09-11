@@ -8,30 +8,30 @@ const MedicalServiceMain = () => {
       <Carousel fade className="MedicalServiceCarouselContainer">
         <Carousel.Item className="MedicalServiceCarouselItem" interval={3000}>
           <div className="medicalServiceMainContent">
-            <MedicalServiceCard />
-            <MedicalServiceCard />
-            <MedicalServiceCard />
+            <MedicalServiceCard organ="BRAIN" name="Neurology" />
+            <MedicalServiceCard organ="BRAIN" name="Neurology" />
+            <MedicalServiceCard organ="BRAIN" name="Neurology" />
           </div>
         </Carousel.Item>
         <Carousel.Item className="MedicalServiceCarouselItem" interval={3000}>
           <div className="medicalServiceMainContent">
-            <MedicalServiceCard />
-            <MedicalServiceCard />
-            <MedicalServiceCard />
+            <MedicalServiceCard organ="HEART" name="Cardiology" />
+            <MedicalServiceCard organ="HEART" name="Cardiology" />
+            <MedicalServiceCard organ="HEART" name="Cardiology" />
           </div>
         </Carousel.Item>
         <Carousel.Item className="MedicalServiceCarouselItem" interval={3000}>
           <div className="medicalServiceMainContent">
-            <MedicalServiceCard />
-            <MedicalServiceCard />
-            <MedicalServiceCard />
+            <MedicalServiceCard organ="KIDNEY" name="nephrologist" />
+            <MedicalServiceCard organ="KIDNEY" name="nephrologist" />
+            <MedicalServiceCard organ="KIDNEY" name="nephrologist" />
           </div>
         </Carousel.Item>
         <Carousel.Item className="MedicalServiceCarouselItem" interval={3000}>
           <div className="medicalServiceMainContent">
-            <MedicalServiceCard />
-            <MedicalServiceCard />
-            <MedicalServiceCard />
+            <MedicalServiceCard organ="EYES" name="ophthalmologist" />
+            <MedicalServiceCard organ="EYES" name="ophthalmologist" />
+            <MedicalServiceCard organ="EYES" name="ophthalmologist" />
           </div>
         </Carousel.Item>
       </Carousel>

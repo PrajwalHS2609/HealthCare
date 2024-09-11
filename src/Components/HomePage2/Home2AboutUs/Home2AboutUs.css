@@ -1,0 +1,111 @@
+.home2AboutUs {
+  /* border: solid red; */
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.home2AboutUsContent1 {
+  /* border: solid blue; */
+  width: 50%;
+  padding: 10px;
+}
+.home2AboutUsContent2 {
+  width: 50%;
+  /* border: solid green; */
+  padding: 10px;
+}
+.home2AboutUsContentWrap {
+  /* border: solid brown; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.home2AboutUsContent2 > img {
+  width: 100%;
+  height: 600px;
+}
+.home2AboutUsContentWrapHead > h6 {
+  font-size: 15px;
+  /* border: solid red; */
+  width: fit-content;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+}
+.home2AboutUsContentWrapHead > h2 {
+  font-size: 40px;
+}
+.home2AboutUsContentWrapPara > p {
+  font-size: 20px;
+  text-align: justify;
+}
+.home2AboutUsContentWrapList {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.home2AboutUsContentWrapList > ul > li {
+  list-style: none;
+  margin: 10px;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.abtus2Icon {
+  /* border: solid red; */
+  padding: 5px;
+  border-radius: 100%;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+}
+.home2AboutUsContentWrapBtn > button {
+  border: none;
+  padding: 8px;
+  font-size: 15px;
+  background-color: var(--customBlue);
+  color: white;
+  border-radius: 20px;
+  transition: 300ms ease-in-out;
+}
+.home2AboutUsContentWrapBtn > button:hover {
+  background-color: var(--customDarkBlue);
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .home2AboutUs {
+    /* border: solid red; */
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+  .home2AboutUsContent1 {
+    /* border: solid blue; */
+    width: 100%;
+    padding: 0px;
+  }
+  .home2AboutUsContent2 {
+    width: 100%;
+    /* border: solid green; */
+  }
+  .home2AboutUsContentWrapList {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .home2AboutUsContent2 > img {
+    width: 100%;
+    height: 100%;
+  }
+  .home2AboutUsContentWrapPara > p {
+    font-size: 20px;
+    text-align: justify;
+  }
+}

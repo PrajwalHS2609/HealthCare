@@ -4,18 +4,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 const AboutUsContactCard = () => {
   return (
-    <div className="aboutUsContactCard">
+    <div className="aboutUsContactCard" id="aboutUsContactCard1">
       <div className="aboutUsContactCardIcon">
         <FontAwesomeIcon
           icon={faCalendar}
           className="aboutUsContactIcon"
         ></FontAwesomeIcon>
       </div>
-      <div className="aboutUsContactCardContent1">
+      <div className="aboutUsContactCardContent1" id="aboutUsContactCard1Content1">
         <h2>Opening Hours</h2>
       </div>
       <div className="aboutUsContactCardContent2">
-        <div className="aboutUsContactCardItem">
+        <div className="aboutUsContactCardItem" id="aboutUsContactCard1Item">
           <li>
             <span>Mon - Tues</span>
             <span>09:00AM - 06:00PM</span>

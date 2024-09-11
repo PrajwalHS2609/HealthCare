@@ -9,6 +9,7 @@ import ContactUs from "./Components/ContactUs/ContactUs";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import RadiationDept from "./Components/RadiationDept/RadiationDept";
 import ScrollTo from "./Components/ScrollTo/ScrollTo";
+import HomePage2 from "./Components/HomePage2/HomePage2";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <ScrollTo />
         <Routes>
           <Route path="/" element={<HomePage />} />{" "}
+          <Route path="/home2" element={<HomePage2 />} />{" "}
           <Route path="/radiation-therapy" element={<RadiationDept />} />
           <Route path="/contact-us" element={<ContactUs />} />{" "}
           <Route path="/about-us" element={<AboutUs />} />

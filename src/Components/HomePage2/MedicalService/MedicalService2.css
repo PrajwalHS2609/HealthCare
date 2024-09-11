@@ -1,0 +1,106 @@
+.medicalService2Container {
+  /* border: solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: var(--customBlue);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+}
+.medicalService2Container > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.medicalService2Head {
+  /* border: solid yellow; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.medicalService2Head > h6 {
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.medicalService2Head > h2 {
+  color: white;
+  font-size: 40px;
+}
+.medicalService2Card {
+  /* border: solid green; */
+  width: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.377);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.medicalService2Card > h6 {
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  width: fit-content;
+}
+.medicalService2Card > h3 {
+  color: white;
+}
+.medicalService2Card > p {
+  /* border: solid; */
+  color: white;
+  text-align: justify;
+}
+.medicalServiceIcon {
+  /* border: solid brown; */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.radIcon {
+  color: white;
+  height: 50px;
+  padding: 10px;
+}
+.medicalServiceIcon2 {
+  border: 5px solid var(--customBlue);
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrIcon {
+  color: white;
+  height: 25px;
+  padding: 10px;
+  transform: rotate(-40deg);
+}
+.medicalService2Content {
+  /* border: solid; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}

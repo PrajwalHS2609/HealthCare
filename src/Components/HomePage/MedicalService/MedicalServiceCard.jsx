@@ -3,14 +3,14 @@ import "./MedicalService.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBrain, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-const MedicalServiceCard = () => {
+const MedicalServiceCard = (props) => {
   return (
     <div className="medicalServiceCard">
       <Link to={"/"}></Link>
       <div className="medicalServiceCardLogo">
         <FontAwesomeIcon
           icon={faBrain}
-          className="medicalServiceIcon"
+          className="medicalServIcon"
         ></FontAwesomeIcon>
       </div>
       <div className="medicalServiceCardImg">
@@ -20,8 +20,8 @@ const MedicalServiceCard = () => {
         />
       </div>
       <div className="medicalServiceCardContent">
-        <h4>BRAIN</h4>
-        <h3>Neurology</h3>
+        <h4>{props.organ}</h4>
+        <h3>{props.name}</h3>
       </div>
       <div className="medicalServiceCardArrow">
         <FontAwesomeIcon
